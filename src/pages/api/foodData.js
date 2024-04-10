@@ -23,5 +23,5 @@ export default async function handler(req, res) {
     let data = await PizzaData.find();
     res.status(200).json({ data });
   }
- 
+  db.disconnect();
 }
