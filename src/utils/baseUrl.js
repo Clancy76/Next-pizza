@@ -1,4 +1,4 @@
 export const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://next-pizza-topaz.vercel.app/"
+    ? process.env.BASE_URL
     : "http://localhost:3000/";
