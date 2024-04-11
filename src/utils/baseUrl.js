@@ -1,4 +1,4 @@
 export const baseUrl =
   process.env.NODE_ENV === "production"
-    ? process.env.BASE_URL
+    ? "https://next-pizza-ofyczxgr8-monu-kumars-projects.vercel.app/"
     : "http://localhost:3000/";
