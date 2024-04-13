@@ -109,7 +109,7 @@ export default function Home({ data }) {
 export async function getStaticProps() {
   let data;
   try {
-    const pizzaData = await fetch(baseUrl + "api/foodData", { method: "GET" })
+    const pizzaData = await fetch(baseUrl + "/", { method: "GET" })
       .then((response) => response.json())
       .catch((error) => error.message);
 
