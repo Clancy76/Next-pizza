@@ -19,10 +19,10 @@ export default function Home({ data }) {
   };
 
   handleData();
- /* useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("isAdmin", false); //added this line here to prevent anyone from accessing /admin if not logged in.
   }, []);
-*/
+
   categoryArray = [...categories];
 
   return (
