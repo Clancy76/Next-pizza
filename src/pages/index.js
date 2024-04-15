@@ -136,14 +136,15 @@ const inter = Inter({ subsets: ["latin"] });
 //     "img": "https://www.dominos.co.in/files/items/garlic-bread.webp"
 //   }
 // ]
-
+let data;
 export async function getStaticProps() {
   console.log(baseUrl);
   try {
     const pizzaData = await fetch(baseUrl + "api/foodData", { method: "GET" })
       .then((response) => response.json())
-      .catch((error) => error.message);
-
+      .catch((error) => {
+        console.log(error.message);
+      });
     data = await JSON.parse(JSON.stringify(pizzaData)); // step required during deployment in staticProps
     return {
       props: {
