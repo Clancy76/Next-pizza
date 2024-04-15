@@ -16,6 +16,8 @@ export default function Home({ data }) {
     data?.map((data) => {
       return foodData.push(data), categories.add(data.category);
     });
+    console.log("Print my data");
+    console.log(data);
   };
 
   handleData();
