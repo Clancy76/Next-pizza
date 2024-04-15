@@ -138,7 +138,7 @@ const inter = Inter({ subsets: ["latin"] });
 // ]
 
 export async function getStaticProps() {
-  let data;
+  console.log(baseUrl);
   try {
     const pizzaData = await fetch(baseUrl + "api/foodData", { method: "GET" })
       .then((response) => response.json())
@@ -170,8 +170,6 @@ export default function Home( {data} ) {
     data?.map((data) => {
       return foodData.push(data), categories.add(data.category);
     });
-    console.log("Print my data");
-    console.log(data);
   };
 
   handleData();
