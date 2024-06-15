@@ -22,13 +22,10 @@ function CarouselComponent() {
             className="object-center brightness-50"
           >
             <img
-              src={"https://i.pinimg.com/originals/ae/64/fd/ae64fd89dec81365bd9230736b292828.jpg"}
+              src={`https://unsplash.com/images/food/pizza/?${image}`}
               alt="pizza"
             />
-            <img
-              src={"https://static.vecteezy.com/system/resources/previews/030/660/303/large_2x/pizza-with-white-background-high-quality-ultra-hd-free-photo.jpg"}
-              alt="pizza"
-            />
+           
           </div>
         );
       })}
