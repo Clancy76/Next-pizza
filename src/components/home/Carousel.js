@@ -14,21 +14,18 @@ function CarouselComponent() {
       emulateTouch
       showThumbs={false}
     >
-      {imageProp.map((image, index) => {
-        return (
-          <div
-            key={index}
-            style={{ maxHeight: "36rem" }}
-            className="object-center brightness-50"
-          >
-            <img
-              src={`https://unsplash.com/images/food/pizza/?${image}`}
+       <img
+              src={"https://i.pinimg.com/originals/ae/64/fd/ae64fd89dec81365bd9230736b292828.jpg"}
               alt="pizza"
             />
-           
-          </div>
-        );
-      })}
+             <img
+              src={"https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+              alt="pizza"
+            />
+             <img
+              src={"https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+              alt="pizza"
+            />
     </Carousel>
   );
 }
