@@ -90,7 +90,7 @@ function Card(props) {
         <div className="flex p-4 font-bold  justify-between">
           <button
             onClick={handleAddToCart}
-            className="border dark:border-black-400 border-gray-900 rounded p-2 hover:bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700  hover:text-gray-100 "
+            className="border text-black dark:border-gray-400 border-gray-900 rounded p-2 hover:bg-gradient-to-r from-indigo-700 via-violet-700 to-orange-700  hover:text-gray-100 "
           >
             Add to cart
           </button>
