@@ -189,16 +189,16 @@ export default function Home( {data} ) {
       <div className="container mx-auto">
         <div className="my-6 space-x-5">
           <button
-            className={`border-black rounded-full dark:border-white border-2 py-1 px-3 ${
-              !typeFilter && "bg-slate-300 dark:bg-slate-600"
+            className={`border-white rounded-full dark:border-white border-2 py-1 px-3 ${
+              !typeFilter && "bg-slate-600 dark:bg-slate-600"
             } `}
             onClick={() => setTypeFilter(false)}
           >
             All
           </button>
           <button
-            className={`border-black rounded-full dark:border-white border-2 py-1 px-3 ${
-              typeFilter === "Veg" && "bg-slate-300 dark:bg-slate-600"
+            className={`border-white rounded-full dark:border-white border-2 py-1 px-3 ${
+              typeFilter === "Veg" && "bg-slate-600 dark:bg-slate-600"
             } `}
             onClick={() => {
               setTypeFilter("Veg");
@@ -214,8 +214,8 @@ export default function Home( {data} ) {
             Veg
           </button>
           <button
-            className={`border-black rounded-full dark:border-white border-2 py-1 px-3 ${
-              typeFilter === "Non-Veg" && "bg-slate-300 dark:bg-slate-600"
+            className={`border-white rounded-full dark:border-white border-2 py-1 px-3 ${
+              typeFilter === "Non-Veg" && "bg-slate-600 dark:bg-slate-600"
             } `}
             onClick={() => {
               setTypeFilter("Non-Veg");
