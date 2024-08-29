@@ -174,9 +174,9 @@ export default function Home( {data} ) {
   };
 
   handleData();
-  useEffect(() => {
-    localStorage.setItem("isAdmin", false); //added this line here to prevent anyone from accessing /admin if not logged in.
-  }, []);
+  // useEffect(() => {
+  //   localStorage.setItem("isAdmin", false); //added this line here to prevent anyone from accessing /admin if not logged in.
+  // }, []);
 
   categoryArray = [...categories];
 
@@ -187,7 +187,7 @@ export default function Home( {data} ) {
       </Head>
       <CarouselComponent />
       <div className="container mx-auto">
-        <div className="my-6 space-x-5">
+        <div className="my-6 space-x-6 mx-4">
           <button
             className={`border-white rounded-full dark:border-white border-2 py-1 px-3 ${
               !typeFilter && "bg-slate-600 dark:bg-slate-600"
